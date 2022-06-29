@@ -1,0 +1,21 @@
+.table,
+td,
+.th {
+  border: 1px solid;
+  padding: 20px;
+  width: inherit;
+}
+
+.table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+thead {
+  border-bottom: 3px solid gray;
+}
