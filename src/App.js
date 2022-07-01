@@ -1,21 +1,37 @@
+import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-
+import { useDispatch } from 'react-redux';
+import Missions from './components/Missions';
+import Profiles from './components/Profiles';
+import Rockets from './components/Rockets';
+import { FetchMissions } from './redux/missions/MissionSlice';
+import { displayRocket, reserveRocket, cancelReserve } from './redux/rockets/rockets';
 import './App.css';
-import Navbar from './components/Navbar';
-import Missions from './components/pages/Missions';
-import MyProfile from './components/pages/MyProfile';
-import Rockets from './components/pages/Rockets';
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(FetchMissions());
+  }, []);
+
+  useEffect(() => {
+    dispatch(displayRocket());
+  }, []);
+  const reserveRocketClick = (rocket) => {
+    dispatch(reserveRocket(rocket));
+  };
+  const cancelReserveClick = (rocket) => {
+    dispatch(cancelReserve(rocket));
+  };
+
   return (
-    <>
-      <Navbar />
+    <div className="App">
       <Routes>
-        <Route path="/" element={<Rockets />} />
+        <Route path="/" element={<Rockets reserveRocketClick={reserveRocketClick} cancelReserveClick={cancelReserveClick} />} />
         <Route path="/missions" element={<Missions />} />
-        <Route path="/my-profile" element={<MyProfile />} />
+        <Route path="/my-profile" element={<Profiles />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

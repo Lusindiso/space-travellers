@@ -1,0 +1,73 @@
+.innerTable-row {
+  border: 1px solid gray;
+}
+
+td {
+  border-width: medium !important;
+}
+
+.bord {
+  font-weight: 600;
+}
+
+.leave-btn {
+  border: 1px solid hsl(0, 73%, 54%);
+  font-size: 15px;
+  border-radius: 5px;
+  color: hsl(0, 73%, 54%);
+  padding: 10px;
+  width: max-content;
+}
+
+.join-btn {
+  border: 1px solid rgb(56, 54, 54);
+  font-size: 15px;
+  border-radius: 5px;
+  color: rgb(56, 54, 54);
+  padding: 10px;
+  width: max-content;
+}
+
+.act-user {
+  border: 1px solid darkturquoise;
+  border-radius: 10px;
+  padding: 6px;
+  background: darkturquoise;
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
+  width: max-content;
+}
+
+.not-act {
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 6px;
+  background: grey;
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
+  width: max-content;
+}
+
+.btn-act {
+  width: 20%;
+  margin: auto;
+}
+
+/* @media (max-width: 768px) {
+  .act-user {
+    border: 1px solid darkturquoise;
+    border-radius: 10px;
+    padding: 6px;
+    background: darkturquoise;
+    color: #fff;
+    font-weight: 600;
+    font-size: 10px;
+  }
+
+  .not-act {
+    width: max-content;
+    font-size: 10px;
+  }
+} */
