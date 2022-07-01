@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rocket Tests renders porperly 1`] = `
+<div
+  className="row"
+>
+  <hr />
+</div>
+`;
