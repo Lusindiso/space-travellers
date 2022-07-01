@@ -1,4 +1,5 @@
 # Space Travelers' Hub
+> ![space travellers](https://user-images.githubusercontent.com/90258833/176904082-2b439a27-4913-489c-95ea-5dfbf5b98f08.png)
 
 >  Space Travelers' Hub is to a web application for a company that provides commercial and scientific space travel services. This application allows users to book rockets and join selected space missions.
 ## Features
