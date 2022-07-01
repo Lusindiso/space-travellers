@@ -35,7 +35,7 @@ npm run build
 
 ## Demo App
 
-**live demo** [To be Published.]()
+**live demo** [https://dev--lustrous-cucurucho-4432ff.netlify.app/](here)
 
 ## Authors
 
